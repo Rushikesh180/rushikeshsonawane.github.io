@@ -1,38 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Rushikesh Sonawane</title>
-  <style>
-    body {
-      font-family: serif;
-      max-width: 900px;
-      margin: auto;
-      padding: 40px;
-      line-height: 1.6;
-    }
-    nav a {
-      margin-right: 15px;
-      text-decoration: none;
-      color: #0055aa;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rushikesh Sonawane</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #222;
+        }
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        }
+        .profile-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            object-fit: cover;
+            border: 3px solid #4CAF50;
+        }
+        h1 {
+            font-size: 2.2em;
+            margin: 10px 0 5px 0;
+        }
+        h2 {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .tagline {
+            font-style: italic;
+            color: #4CAF50;
+            margin-bottom: 30px;
+        }
+        .research {
+            text-align: left;
+            margin-bottom: 30px;
+        }
+        .research ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .research li::before {
+            content: "💡";
+            margin-right: 8px;
+        }
+        .buttons a {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 12px 25px;
+            margin: 5px;
+            border-radius: 6px;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+        .buttons a:hover {
+            background-color: #45a049;
+        }
+        @media(max-width: 600px){
+            .container {
+                margin: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <img src="profile.jpg" alt="Rushikesh Sonawane" class="profile-img">
+        <h1>Rushikesh Sonawane</h1>
+        <h2>PhD Researcher | High-Energy Astrophysics | Spectro-Polarimetry of GRBs</h2>
+        <p class="tagline">“Decoding the most energetic explosions in the universe, one photon at a time.”</p>
 
-<h1>Rushikesh Sonawane</h1>
+        <div class="research">
+            <p>I am a <strong>PhD researcher in high-energy astrophysics</strong>, specializing in the <strong>spectro-polarimetric study of Gamma-Ray Bursts (GRBs)</strong> using <strong>AstroSat-CZTI</strong>. My work explores the <strong>polarization patterns, emission mechanisms, and jet structures</strong> of these cosmic explosions to uncover the physics driving them.</p>
+            <ul>
+                <li>Time-resolved spectro-polarimetry of GRBs</li>
+                <li>Probing jet geometry and emission mechanisms through polarization</li>
+                <li>High-energy astrophysical phenomena across multiple wavelengths</li>
+            </ul>
+        </div>
 
-<p>
-PhD researcher in high-energy astrophysics, working on spectro-polarimetry
-of Gamma-Ray Bursts using AstroSat-CZTI.
-</p>
+        <p>✨ Passionate about turning observational data into <strong>physical insights about the universe’s most extreme events</strong>.</p>
 
-<nav>
-  <a href="research.html">Research</a>
-  <a href="publications.html">Publications</a>
-  <a href="cv.pdf">CV</a>
-  <a href="contact.html">Contact</a>
-</nav>
-
+        <div class="buttons">
+            <a href="#">Publications</a>
+            <a href="#">CV</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
 </body>
 </html>
