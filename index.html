@@ -13,7 +13,7 @@
             color: #222;
         }
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 50px auto;
             padding: 30px;
             text-align: center;
@@ -43,16 +43,27 @@
             color: #0073e6;
             margin-bottom: 30px;
         }
-        .research {
+        .section {
             text-align: left;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
-        .research ul {
+        .section h3 {
+            color: #0073e6;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #0073e6;
+            display: inline-block;
+            padding-bottom: 3px;
+        }
+        ul {
             list-style: none;
             padding-left: 0;
         }
-        .research li::before {
+        li::before {
             content: "💡";
+            margin-right: 8px;
+        }
+        .publications li::before {
+            content: "📄";
             margin-right: 8px;
         }
         .buttons a {
@@ -79,12 +90,15 @@
 </head>
 <body>
     <div class="container">
+        <!-- Profile -->
         <img src="Rushikesh_1.jpeg" alt="Rushikesh Sonawane" class="profile-img">
         <h1>Rushikesh Sonawane</h1>
         <h2>PhD Researcher | High-Energy Astrophysics</h2>
         <p class="tagline">“Exploring the physics of Gamma-Ray Bursts through observations, modeling, and simulations.”</p>
 
-        <div class="research">
+        <!-- Research Section -->
+        <div class="section">
+            <h3>Research Focus</h3>
             <p>I am a <strong>PhD researcher in high-energy astrophysics</strong>, working on <strong>Gamma-Ray Bursts (GRBs)</strong>. My research combines <strong>spectro-polarimetry, spectral modeling, and numerical simulations</strong> to understand the most energetic explosions in the universe. I am an active member of the <strong>Fermi-GBM</strong> and <strong>AstroSat-CZTI collaborations</strong>.</p>
             <ul>
                 <li>Spectro-polarimetric studies of GRBs through the <strong>joint analysis of Fermi-GBM and AstroSat-CZTI</strong>, probing polarization signatures and jet structures.</li>
@@ -93,10 +107,19 @@
             </ul>
         </div>
 
-        <p>✨ Bridging <strong>observations, modeling, and simulations</strong> to reveal the physics driving these extreme cosmic events.</p>
+        <!-- Publications Section -->
+        <div class="section">
+            <h3>Publications</h3>
+            <ul class="publications">
+                <li>Sonawane, R., et al. (2025). *Spectro-polarimetry of GRB 180427A: Evidence for Distinct Emission Sites.* Journal of High-Energy Astrophysics.</li>
+                <li>Sonawane, R., et al. (2024). *Numerical Simulations of GRB Jets and Polarization Signatures.* Astrophysical Journal.</li>
+                <li>Sonawane, R., et al. (2024). *Spectral Modeling of GRBs using Fermi-GBM and Fermi-LAT.* Monthly Notices of the Royal Astronomical Society.</li>
+                <!-- Add more publications here -->
+            </ul>
+        </div>
 
+        <!-- Buttons -->
         <div class="buttons">
-            <a href="#">Publications</a>
             <a href="#">CV</a>
             <a href="#">Contact</a>
         </div>
