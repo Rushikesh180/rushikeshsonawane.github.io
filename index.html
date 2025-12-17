@@ -3,126 +3,221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rushikesh Sonawane</title>
+    <title>Rushikesh Sonawane | High-Energy Astrophysics</title>
+
     <style>
         body {
-            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to right, #f7f7f7, #e6f2ff);
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(to right, #f4f7fb, #e9f1ff);
             color: #222;
         }
+
         .container {
             max-width: 1000px;
             margin: 50px auto;
-            padding: 30px;
+            padding: 40px;
+            background: #ffffff;
+            border-radius: 14px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+        }
+
+        /* Header */
+        .header {
             text-align: center;
-            background-color: #fff;
-            border-radius: 12px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-        }
-        .profile-img {
-            width: 140px;
-            height: 140px;
-            border-radius: 50%;
-            margin-bottom: 20px;
-            object-fit: cover;
-            border: 3px solid #0073e6;
-        }
-        h1 {
-            font-size: 2.2em;
-            margin: 10px 0 5px 0;
-        }
-        h2 {
-            font-size: 1.2em;
-            color: #555;
-            margin-bottom: 20px;
-        }
-        .tagline {
-            font-style: italic;
-            color: #0073e6;
-            margin-bottom: 30px;
-        }
-        .section {
-            text-align: left;
             margin-bottom: 40px;
         }
-        .section h3 {
-            color: #0073e6;
-            margin-bottom: 15px;
-            border-bottom: 2px solid #0073e6;
-            display: inline-block;
-            padding-bottom: 3px;
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #005bb5;
+            margin-bottom: 20px;
         }
+
+        h1 {
+            margin: 10px 0 5px 0;
+            font-size: 2.4em;
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 1.2em;
+            color: #555;
+            font-weight: normal;
+        }
+
+        .tagline {
+            margin-top: 15px;
+            font-style: italic;
+            color: #005bb5;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 45px;
+        }
+
+        .section h3 {
+            color: #005bb5;
+            border-bottom: 2px solid #005bb5;
+            display: inline-block;
+            padding-bottom: 4px;
+            margin-bottom: 15px;
+        }
+
+        .section p {
+            line-height: 1.6;
+        }
+
         ul {
             list-style: none;
             padding-left: 0;
         }
-        li::before {
-            content: "💡";
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        ul li::before {
+            content: "•";
+            color: #005bb5;
+            font-weight: bold;
             margin-right: 8px;
         }
+
+        /* Publications */
         .publications li::before {
             content: "📄";
             margin-right: 8px;
         }
+
+        /* Buttons */
+        .buttons {
+            text-align: center;
+            margin-top: 30px;
+        }
+
         .buttons a {
             display: inline-block;
+            margin: 6px;
+            padding: 12px 26px;
+            background: #005bb5;
+            color: #ffffff;
             text-decoration: none;
-            background-color: #0073e6;
-            color: #fff;
-            padding: 12px 25px;
-            margin: 5px;
             border-radius: 6px;
-            transition: 0.3s;
             font-weight: bold;
+            transition: background 0.3s;
         }
+
         .buttons a:hover {
-            background-color: #005bb5;
+            background: #003f82;
         }
-        @media(max-width: 600px){
+
+        /* Footer */
+        footer {
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 700px) {
             .container {
                 margin: 20px;
-                padding: 20px;
+                padding: 25px;
             }
         }
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <!-- Profile -->
+
+<div class="container">
+
+    <!-- Header -->
+    <div class="header">
         <img src="Rushikesh_1.jpeg" alt="Rushikesh Sonawane" class="profile-img">
         <h1>Rushikesh Sonawane</h1>
         <h2>PhD Researcher | High-Energy Astrophysics</h2>
-        <p class="tagline">“Exploring the physics of Gamma-Ray Bursts through observations, modeling, and simulations.”</p>
-
-        <!-- Research Section -->
-        <div class="section">
-            <h3>Research Focus</h3>
-            <p>I am a <strong>PhD researcher in high-energy astrophysics</strong>, working on <strong>Gamma-Ray Bursts (GRBs)</strong>. My research combines <strong>spectro-polarimetry, spectral modeling, and numerical simulations</strong> to understand the most energetic explosions in the universe. I am an active member of the <strong>Fermi-GBM</strong> and <strong>AstroSat-CZTI collaborations</strong>.</p>
-            <ul>
-                <li>Spectro-polarimetric studies of GRBs through the <strong>joint analysis of Fermi-GBM and AstroSat-CZTI</strong>, probing polarization signatures and jet structures.</li>
-                <li>Spectral modeling using <strong>Fermi-GBM and Fermi-LAT</strong> data to understand emission mechanisms and energy distribution.</li>
-                <li>Numerical simulations of GRB jets to study dynamics, emission regions, and jet geometry.</li>
-            </ul>
-        </div>
-
-        <!-- Publications Section -->
-        <div class="section">
-            <h3>Publications</h3>
-            <ul class="publications">
-                <li>Sonawane, R., et al. (2025). *Spectro-polarimetry of GRB 180427A: Evidence for Distinct Emission Sites.* Journal of High-Energy Astrophysics.</li>
-                <li>Sonawane, R., et al. (2024). *Numerical Simulations of GRB Jets and Polarization Signatures.* Astrophysical Journal.</li>
-                <li>Sonawane, R., et al. (2024). *Spectral Modeling of GRBs using Fermi-GBM and Fermi-LAT.* Monthly Notices of the Royal Astronomical Society.</li>
-                <!-- Add more publications here -->
-            </ul>
-        </div>
-
-        <!-- Buttons -->
-        <div class="buttons">
-            <a href="#">CV</a>
-            <a href="#">Contact</a>
-        </div>
+        <p class="tagline">
+            “Exploring the physics of Gamma-Ray Bursts through observations, modeling, and simulations.”
+        </p>
     </div>
+
+    <!-- About -->
+    <div class="section">
+        <h3>About Me</h3>
+        <p>
+            I am a <strong>PhD researcher in high-energy astrophysics</strong> working on
+            <strong>Gamma-Ray Bursts (GRBs)</strong>. My research integrates
+            <strong>spectro-polarimetry, spectral modeling, and numerical simulations</strong>
+            to investigate the physical mechanisms driving the most energetic explosions in the universe.
+        </p>
+        <p>
+            I am an active member of the <strong>Fermi-GBM</strong> and
+            <strong>AstroSat-CZTI collaborations</strong>.
+        </p>
+    </div>
+
+    <!-- Research -->
+    <div class="section">
+        <h3>Research Interests</h3>
+        <ul>
+            <li>
+                Spectro-polarimetric studies of GRBs using
+                <strong>joint Fermi-GBM and AstroSat-CZTI analysis</strong>,
+                probing polarization signatures and jet structure.
+            </li>
+            <li>
+                Spectral modeling of GRB emission using
+                <strong>Fermi-GBM and Fermi-LAT</strong> data.
+            </li>
+            <li>
+                Numerical simulations of <strong>GRB jets</strong> to study jet dynamics,
+                emission regions, and geometry.
+            </li>
+        </ul>
+    </div>
+
+    <!-- Publications -->
+    <div class="section">
+        <h3>Selected Publications</h3>
+        <ul class="publications">
+            <li>
+                <strong>Sonawane, R.</strong>, Iyyani, S., Gupta, S., Chattopadhyay, T.,
+                Bhattacharya, D., Bhalerao, V. B., Vadawale, S. V., & Dewangan, G. C. (2025).
+                <em>Spectro-polarimetry of GRB 180427A: Evidence for Distinct Emission Sites with Varying Polarization.</em>
+                <strong>The Astrophysical Journal</strong>.
+            </li>
+        </ul>
+
+        <p style="margin-top:15px;">
+            🔗 For a complete and up-to-date list of publications, see my
+            <a href="https://ui.adsabs.harvard.edu/search/?q=author%3A%22Rushikesh%20Sonawane%22&sort=date%20desc%2C%20bibcode%20desc"
+               target="_blank">
+               ADS author profile
+            </a>.
+            <br>
+            <small>(Note: ADS includes multiple authors with similar names.)</small>
+        </p>
+    </div>
+
+    <!-- Buttons -->
+    <div class="buttons">
+        <a href="#">CV</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        © 2025 Rushikesh Sonawane · High-Energy Astrophysics
+    </footer>
+
+</div>
+
 </body>
 </html>
