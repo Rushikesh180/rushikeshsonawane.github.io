@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rushikesh Sonawane | High-Energy Astrophysics</title>
 
-
-
     <style>
         body {
             margin: 0;
@@ -26,112 +24,52 @@
         }
 
         /* Satellite section */
-.satellite-container {
-    margin-top: 40px;
-    text-align: center;
-}
+        .satellite-container {
+            margin-top: 40px;
+            text-align: center;
+        }
 
-.satellite-container h3 {
-    color: #005bb5;
-    border-bottom: 2px solid #005bb5;
-    display: inline-block;
-    padding-bottom: 4px;
-    margin-bottom: 20px;
-    font-size: 1.6em;
-}
+        .satellite-container h3 {
+            color: #005bb5;
+            border-bottom: 2px solid #005bb5;
+            display: inline-block;
+            padding-bottom: 4px;
+            margin-bottom: 20px;
+            font-size: 1.6em;
+        }
 
-.satellite-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    flex-wrap: wrap;
-    margin-top: 25px;
-}
+        .satellite-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
 
-.satellite-item {
-    max-width: 360px; /* Larger size */
-    text-align: center;
-}
+        .satellite-item {
+            max-width: 360px;
+            text-align: center;
+        }
 
-.satellite-item img {
-    width: 100%;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.18);
-}
+        .satellite-item img {
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.18);
+        }
 
-.satellite-item p {
-    margin-top: 12px;
-    font-size: 15px;
-    color: #333;
-    line-height: 1.4;
-}
+        .satellite-item p {
+            margin-top: 12px;
+            font-size: 15px;
+            color: #333;
+            line-height: 1.4;
+        }
 
-         
+        /* Header */
         .header {
             text-align: center;
             margin-bottom: 40px;
         }
-
-
-
-        /* Academic Profiles Section */
-.profiles {
-    text-align: center;
-    margin-top: 40px;
-}
-
-.profile-buttons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.btn-profile {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 12px 20px;
-    background: #005bb5;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-    transition: background 0.3s;
-}
-
-.btn-profile:hover {
-    background: #003f82;
-}
-
-.btn-profile img {
-    width: 22px;
-    height: 22px;
-    object-fit: contain;
-    background: #fff;
-    border-radius: 4px;
-    padding: 2px;
-}
-
-
-        .publications-gcns h4 {
-    font-size: 1.3em;
-    font-weight: bold;
-    display: inline-block;
-    border-bottom: 2px solid #005bb5;
-    padding-bottom: 4px;
-}
-
-.publications-gcns a {
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.publications-gcns a:hover {
-    color: #003f82;
-}
 
         .profile-img {
             width: 150px;
@@ -196,24 +134,90 @@
             margin-right: 8px;
         }
 
-        .buttons {
+        /* Academic Profiles */
+        .profiles {
             text-align: center;
-            margin-top: 30px;
+            margin-top: 40px;
         }
 
-        .buttons a {
-            margin: 6px;
-            padding: 12px 26px;
-            text-decoration: none;
+        .profile-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .btn-profile {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 20px;
             background: #005bb5;
             color: #fff;
+            text-decoration: none;
             border-radius: 6px;
             font-weight: bold;
             transition: background 0.3s;
         }
 
-        .buttons a:hover {
+        .btn-profile:hover {
             background: #003f82;
+        }
+
+        .btn-profile img {
+            width: 22px;
+            height: 22px;
+            object-fit: contain;
+            background: #fff;
+            border-radius: 4px;
+            padding: 2px;
+        }
+
+        .publications-gcns h4 {
+            font-size: 1.3em;
+            font-weight: bold;
+            display: inline-block;
+            border-bottom: 2px solid #005bb5;
+            padding-bottom: 4px;
+        }
+
+        .publications-gcns a {
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .publications-gcns a:hover {
+            color: #003f82;
+        }
+
+        /* Simulation Section */
+        .simulation-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .simulation-item {
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .simulation-item img,
+        .simulation-item video {
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+        }
+
+        .simulation-item p {
+            margin-top: 8px;
+            font-size: 14px;
+            color: #333;
+            line-height: 1.4;
         }
 
         footer {
@@ -260,107 +264,101 @@
             <strong>AstroSat-CZTI collaborations</strong>.
         </p>
     </div>
-    <!-- Satellite Images Section -->
-<div class="satellite-container">
 
-    <div class="satellite-gallery">
-        <div class="satellite-item">
-            <img src="FGST-in-space.jpg" alt="Fermi Gamma-ray Space Telescope">
-            <p><strong>Fermi Gamma-ray Space Telescope</strong><br>(Gamma-ray Burst Monitor – GBM)</p>
-        </div>
+    <!-- Satellite Images -->
+    <div class="satellite-container">
+        <div class="satellite-gallery">
+            <div class="satellite-item">
+                <img src="FGST-in-space.jpg" alt="Fermi Gamma-ray Space Telescope">
+                <p><strong>Fermi Gamma-ray Space Telescope</strong><br>(Gamma-ray Burst Monitor – GBM)</p>
+            </div>
 
-        <div class="satellite-item">
-            <img src="AstroSat.jpg" alt="AstroSat Space Observatory">
-            <p><strong>AstroSat Space Observatory</strong><br>(Cadmium Zinc Telluride Imager – CZTI)</p>
+            <div class="satellite-item">
+                <img src="AstroSat.jpg" alt="AstroSat Space Observatory">
+                <p><strong>AstroSat Space Observatory</strong><br>(Cadmium Zinc Telluride Imager – CZTI)</p>
+            </div>
         </div>
     </div>
-</div>
-
 
     <!-- Research Interests -->
     <div class="section">
         <h3>Research Interests</h3>
         <ul>
-            <li>
-                Spectro-polarimetric studies of GRBs using
-                <strong>joint Fermi-GBM and AstroSat-CZTI analysis</strong>,
-                probing polarization signatures and jet structure.
-            </li>
-            <li>
-                Spectral modeling of GRB emission using
-                <strong>Fermi-GBM and Fermi-LAT</strong> data.
-            </li>
-            <li>
-                Numerical simulations of <strong>GRB jets</strong> to study jet dynamics,
-                emission regions, and geometry.
-            </li>
+            <li>Spectro-polarimetric studies of GRBs using <strong>joint Fermi-GBM and AstroSat-CZTI analysis</strong>, probing polarization signatures and jet structure.</li>
+            <li>Spectral modeling of GRB emission using <strong>Fermi-GBM and Fermi-LAT</strong> data.</li>
+            <li>Numerical simulations of <strong>GRB jets</strong> to study jet dynamics, emission regions, and geometry.</li>
         </ul>
+    </div>
+
+    <!-- Research Simulations & Animations -->
+    <div class="section">
+        <h3>Research Simulations & Animations</h3>
+        <p>Visualizations related to my GRB research. (Actual simulations/animations will be added soon.)</p>
+
+        <div class="simulation-gallery">
+            <div class="simulation-item">
+                <img src="placeholder_sim1.png" alt="Simulation 1">
+                <p>GRB Jet Dynamics Simulation (Placeholder)<br><em>Credit: Rushikesh Sonawane</em></p>
+            </div>
+            <div class="simulation-item">
+                <img src="placeholder_sim2.png" alt="Simulation 2">
+                <p>Polarization Mapping (Placeholder)<br><em>Credit: Rushikesh Sonawane</em></p>
+            </div>
+            <div class="simulation-item">
+                <img src="placeholder_sim3.png" alt="Simulation 3">
+                <p>Lightcurve Modeling (Placeholder)<br><em>Credit: Rushikesh Sonawane</em></p>
+            </div>
+        </div>
     </div>
 
     <!-- Publications -->
-<div class="section">
-    <h3>Selected Publications</h3>
-
-    <ul class="publications">
-        <li>
-            <strong>Sonawane, R.</strong>, Iyyani, S., Gupta, S., Chattopadhyay, T.,
-            Bhattacharya, D., Bhalerao, V. B., Vadawale, S. V., & Dewangan, G. C. (2025).<br>
-            <em>Spectro-polarimetry of GRB 180427A: Evidence for Distinct Emission Sites with Varying Polarization.</em><br>
-            <strong>The Astrophysical Journal</strong>.
-        </li>
-
-        <li>
-            <strong>Dimple</strong>, Gompertz, B. P., Levan, A. J., Malesani, D. B., Laskar, T.,
-            Bala, S., … <strong>Sonawane, R.</strong>, … Zafar, T. (2025).<br>
-            <em>GRB 241105A: A test case for GRB classification and rapid r-process nucleosynthesis channels.</em><br>
-            <strong>Monthly Notices of the Royal Astronomical Society</strong>.
-        </li>
-    </ul>
-
-    <!-- Publications & GCNs -->
-    <div class="publications-gcns" style="margin-top:25px;">
-        <h4 style="color:#005bb5; margin-bottom:15px;">Publications & GCNs</h4>
-        <ul style="list-style: none; padding-left: 0; line-height: 1.6;">
-            <li>📄 <a href="https://ui.adsabs.harvard.edu/public-libraries/FSVBgRauRGu1r5hEtZHwnA" target="_blank" style="color:#005bb5; text-decoration:none;">
-                All Papers on NASA ADS
-            </a></li>
-            <li>📡 <a href="https://gcn.gsfc.nasa.gov/gcn3_archive.html" target="_blank" style="color:#005bb5; text-decoration:none;">
-                GCN Circulars Archive
-            </a></li>
+    <div class="section">
+        <h3>Selected Publications</h3>
+        <ul class="publications">
+            <li>
+                <strong>Sonawane, R.</strong>, Iyyani, S., Gupta, S., Chattopadhyay, T., Bhattacharya, D., Bhalerao, V. B., Vadawale, S. V., & Dewangan, G. C. (2025).<br>
+                <em>Spectro-polarimetry of GRB 180427A: Evidence for Distinct Emission Sites with Varying Polarization.</em><br>
+                <strong>The Astrophysical Journal</strong>.
+            </li>
+            <li>
+                <strong>Dimple</strong>, Gompertz, B. P., Levan, A. J., Malesani, D. B., Laskar, T., Bala, S., … <strong>Sonawane, R.</strong>, … Zafar, T. (2025).<br>
+                <em>GRB 241105A: A test case for GRB classification and rapid r-process nucleosynthesis channels.</em><br>
+                <strong>Monthly Notices of the Royal Astronomical Society</strong>.
+            </li>
         </ul>
+
+        <!-- Publications & GCNs -->
+        <div class="publications-gcns" style="margin-top:25px;">
+            <h4 style="color:#005bb5; margin-bottom:15px;">Publications & GCNs</h4>
+            <ul style="list-style: none; padding-left: 0; line-height: 1.6;">
+                <li>📄 <a href="https://ui.adsabs.harvard.edu/public-libraries/FSVBgRauRGu1r5hEtZHwnA" target="_blank" style="color:#005bb5; text-decoration:none;">
+                    All Papers on NASA ADS
+                </a></li>
+                <li>📡 <a href="https://gcn.gsfc.nasa.gov/gcn3_archive.html" target="_blank" style="color:#005bb5; text-decoration:none;">
+                    GCN Circulars Archive
+                </a></li>
+            </ul>
+        </div>
     </div>
-</div>
 
-<!-- NASA ADS Library and ORCID -->
-<!-- Academic Profiles -->
-<hr>
-
-<div class="profiles">
-    <h3>Academic Profiles</h3>
-
-    <div class="profile-buttons">
-
-        <a href="https://orcid.org/0009-0009-2018-9457" target="_blank" class="btn-profile">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/ORCID_iD.svg" alt="ORCID">
-            ORCID
-        </a>
-
-
-
-        <a href="https://www.github.com/Rushikesh180" target="_blank" class="btn-profile">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
-            GitHub
-        </a>
-
-        <a href="https://www.linkedin.com/in/rushikesh45" target="_blank" class="btn-profile">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
-            LinkedIn
-        </a>
-
+    <!-- Academic Profiles -->
+    <hr>
+    <div class="profiles">
+        <h3>Academic Profiles</h3>
+        <div class="profile-buttons">
+            <a href="https://orcid.org/0009-0009-2018-9457" target="_blank" class="btn-profile">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/ORCID_iD.svg" alt="ORCID"> ORCID
+            </a>
+            <a href="https://www.github.com/Rushikesh180" target="_blank" class="btn-profile">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/rushikesh45" target="_blank" class="btn-profile">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn"> LinkedIn
+            </a>
+        </div>
     </div>
+    <hr>
+
 </div>
-
-<hr>
-
 </body>
 </html>
