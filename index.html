@@ -24,38 +24,50 @@
             border-radius: 14px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.12);
         }
-         /* Satellite section */
+
+        /* Satellite section */
 .satellite-container {
-    margin-top: 30px;
+    margin-top: 40px;
     text-align: center;
+}
+
+.satellite-container h3 {
+    color: #005bb5;
+    border-bottom: 2px solid #005bb5;
+    display: inline-block;
+    padding-bottom: 4px;
+    margin-bottom: 20px;
+    font-size: 1.6em;
 }
 
 .satellite-gallery {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 50px;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .satellite-item {
-    max-width: 260px;
+    max-width: 360px; /* Larger size */
+    text-align: center;
 }
 
 .satellite-item img {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 10px;
     border: 1px solid #ccc;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.18);
 }
 
 .satellite-item p {
-    margin-top: 8px;
-    font-size: 14px;
-    color: #444;
+    margin-top: 12px;
+    font-size: 15px;
+    color: #333;
+    line-height: 1.4;
 }
 
-
+         
         .header {
             text-align: center;
             margin-bottom: 40px;
@@ -190,16 +202,17 @@
     </div>
     <!-- Satellite Images Section -->
 <div class="satellite-container">
+    <h3>Satellites I Work With</h3>
 
     <div class="satellite-gallery">
         <div class="satellite-item">
-            <img src="FGST-in-space.jpg" alt="Fermi-GBM">
-            <p>Fermi Gamma-ray Burst Monitor (GBM)</p>
+            <img src="FGST-in-space.jpg" alt="Fermi Gamma-ray Space Telescope">
+            <p><strong>Fermi Gamma-ray Space Telescope</strong><br>(Gamma-ray Burst Monitor – GBM)</p>
         </div>
 
         <div class="satellite-item">
-            <img src="AstroSat.jpg" alt="AstroSat-CZTI">
-            <p>AstroSat — Cadmium Zinc Telluride Imager (CZTI)</p>
+            <img src="AstroSat.jpg" alt="AstroSat Space Observatory">
+            <p><strong>AstroSat Space Observatory</strong><br>(Cadmium Zinc Telluride Imager – CZTI)</p>
         </div>
     </div>
 </div>
